@@ -148,6 +148,7 @@ animation: p1op 3s;
     font-size: 25px;
     font-weight: bold;
  color: white;
+   pointer-events: none;  
 }
 .right{
     width: 500px;
