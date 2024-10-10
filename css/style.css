@@ -1,0 +1,265 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(Roboto/Roboto-Thin.ttf) format("truetype");
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    cursor: url(img/free-icon-cursor-5340748.png) , grab;
+    scrollbar-width: thin;
+  scrollbar-color: var(--maincolor) var(--txtcolor1);
+  animation: ovfl 4s ;
+  ::selection{
+   background-color: var(--maincolor);
+  }
+  font-family: "Roboto",sans-serif;
+  --maincolor:rgba(0, 188, 154);
+  --titlecolor:rgb(106, 111, 120);
+  --txtcolor1:rgb(144, 144, 144);
+}
+  @keyframes ovfl {
+    0%{
+        overflow: hidden;
+    }
+  99%{
+    overflow: hidden;
+}
+  100%{
+    overflow: auto;
+}
+}
+a{
+    text-decoration: none;
+}
+.h100{
+    height: 100%;
+}
+.w100{
+    width: 100%;
+}
+.fixed{
+    position: fixed;
+}
+.flex{
+    display: flex;
+}
+.loading{
+    animation: load 3s;
+  position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes load{
+    0%{
+        position:fixed;
+        background-color: rgb(207, 207, 207);
+    }
+   99%{
+    position:fixed;
+    background-color: rgb(162, 211, 184);
+        display: flex;
+        
+    }
+}
+.loader {
+    border: 16px solid var(--titlecolor);
+    border-radius: 50%;
+    border-top: 16px solid var(--maincolor);
+    width: 120px;
+    height: 120px;
+    animation: spin 3s ;
+    opacity: 0;
+    position:absolute;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); 
+    opacity: 1;}
+    25% { transform: rotate(360deg); 
+    opacity: 1;}
+    50% { transform: rotate(720deg); 
+        opacity: 1;}
+    100% { transform: rotate(1080deg); 
+        opacity: 1;}
+  }
+@keyframes p1op{
+    0%{
+        opacity: 0;
+      }
+    99%{
+        opacity: 0;
+      }
+    100%{
+        opacity: 1;
+    }
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right top, #000000b5,  #000000b5), url(img/fon.webp);
+    background-size: cover;
+    background-color: rgba(0, 28, 48, 0.301);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+animation: p1op 3s;
+}
+.l-s{
+    letter-spacing: 5px;
+}
+.trans{
+    transition: 300ms;
+}
+.up{
+    top: 80%;
+    left: 95%;
+    font-size: 45px;
+    color: var(--titlecolor);
+}
+.down{
+    top: 90%;
+    left: 95%;
+    font-size: 45px;
+    color: var(--titlecolor);
+}
+.txttran{
+ transform: translateY(160px) translateX(30px);
+}
+.jccenter{
+    justify-content: center;
+}
+.aicenter{
+    align-items: center;
+}
+.dec-none{
+    text-decoration: none;
+}
+.top{ 
+    justify-content: space-between;
+    height: 50px;
+    width: 95%;
+  transform: translateY(10px);
+}
+#bouncy{
+    font-size: 25px;
+    font-weight: bold;
+ color: white;
+}
+.right{
+    width: 500px;
+   font-size: 20px;
+   gap: 10px;
+}
+.txttop{
+    color: white;
+}
+.txttop:hover{
+    border-radius: 20px;
+    border: 1px white solid;
+    padding: 10px;
+    font-size: 22px;
+}
+.cubtext{
+    height: calc(90% - 50px);
+    text-align: center;
+    color: white;
+}
+.column{
+    flex-direction: column;
+}
+.weare{
+ margin-bottom: 20px;
+ font-size: 35px;
+}
+.atvero,.atvero2{
+    font-size: 25px;
+}
+.bottom{
+    height:10% ;
+    width: 10%;
+    align-items: start;
+}
+.radius{
+    height: 70%;
+    width: 40%;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--maincolor);
+    text-decoration: none;
+}
+.fx3center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#r1{
+    font-size: 20px;
+    transform: rotate(90deg)
+}
+.radius:hover {
+    background-color:var(--maincolor);
+    color: white;
+}
+@media  (max-width:1000px)and (min-width:670px){
+    .hello{
+        padding: 5px;
+    }
+    .right{
+        gap:10px ;
+        font-size: 18px;
+    }
+    .weare{
+font-size: 30px;
+    }
+    .atvero,.atvero2{
+        font-size: 20px;
+    }
+    .radius{
+        height: 50%;
+      width: 50%;
+    }
+}
+@media  (max-width:670px){
+    .weare{
+font-size: 25px;
+    }
+    .atvero,.atvero2{
+        font-size: 15px;
+    }
+    .hello{
+        padding:2px;
+    }
+    .right:hover{
+       gap: 10px;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-end;
+    }
+    .right:hover .txttop{
+      display: flex;
+      background-color: rgba(83, 83, 83, 0.552);
+    }
+    .right{
+        background-color:var(--maincolor);
+        width: 5%;
+        height: 50%;
+        margin-right: 5%;
+    }
+    .txttop{
+       display: none;
+    }
+    .radius{
+        height: 40%;
+      width: 70%;
+    }
+    .up{
+        left: 90%;
+    }
+    .down{
+        left: 90%;
+    }
+}

@@ -1,0 +1,135 @@
+#page6{
+    height: 130%;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.p6main{
+    display: flex;
+     justify-content:space-between;
+     align-items: center;
+    width: 90%;
+    height: 70%;
+}
+.p6imgteam{
+    height: 75%;
+    width: 30%;
+    background-color: rgba(0, 255, 255, 0.366);
+}
+.p6txtteam{
+    height: 90%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+}
+.p6txt1{
+    color: var(--titlecolor);
+}
+.p6txt2{
+    color: var(--txtcolor1);
+    text-align: end;
+}
+.p6diagram{
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+.p6d1{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.p6line1{
+    height: 1.5%;
+    width: 100%;
+    background-image:  linear-gradient(to right, var(--maincolor) 80%,var(--txtcolor1) 80%);
+}
+.l2{
+    background-image:  linear-gradient(to right, var(--maincolor) 65%, var(--txtcolor1) 65%);  
+}
+.l3{
+    background-image:  linear-gradient(to right,  var(--maincolor)75%,var(--txtcolor1) 75%);  
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.p6cubradius{
+    height: 3%;
+    width: 5%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.p6radius1{
+    border-radius: 50%;
+    height: 50%;
+    width: 20%;
+   border: 1px var(--maincolor) solid;
+}
+.p6radius1:hover{
+    background-color: var(--maincolor);
+}
+#p6bottom{
+    height: 30%;
+    width: 100%;
+    background-image: linear-gradient(to right top, #000000cb,  #000000cb), url(img/9-9.webp);
+    background-size: cover;
+   margin-top: 5%;
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+   gap: 40px;
+}
+.p6txt3{
+    color: white;
+    font-size: 20px;
+}
+@media  (max-width:1000px)and (min-width:670px){
+    .p6imgteam{
+        height:70% ;
+    }
+    .p6txtteam{
+        width: 40%;
+    }
+    .p6cubradius{
+   height:2%;
+    }
+    #p6bottom{
+        height: 25%;
+    }
+}
+@media  (max-width:670px){
+    .p6imgteam{
+        height:60% ;
+        width: 45%;
+    }
+    .p6teamtxt{
+        font-size: 20px;
+    }
+    .p6t1{
+        font-size: 15px;
+    }
+    .p6txtteam{
+       gap: 5px;
+    }
+    .p6txt2{
+        font-size: 13px;   
+    }
+    .p6cubradius{
+        width: 20%;
+    }
+}
